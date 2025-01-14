@@ -5,7 +5,7 @@
 class Qryptic < Formula
   desc "Qryptic Client to connect to Qryptic gateways"
   homepage "https://github.com/leetsecure/qryptic-client-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "AGPL-3.0"
 
   depends_on "go"
@@ -13,16 +13,16 @@ class Qryptic < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/leetsecure/qryptic-client-cli/releases/download/v0.1.0/qryptic_v0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "ef9fcb75a3823be54876e549c5fef90f725aa86ec33ff2e181533c31591c603c"
+      url "https://github.com/leetsecure/qryptic-client-cli/releases/download/v0.1.1/qryptic_v0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "9ecc833657a5307e15a7c211f92e72718034eeb59e6df59fadc89762a9d883b1"
 
       def install
         bin.install "qryptic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/leetsecure/qryptic-client-cli/releases/download/v0.1.0/qryptic_v0.1.0_Darwin_arm64.tar.gz"
-      sha256 "c9d5c02214c82b7745ea167f5748046617db4037205517631c0a0572bccf8851"
+      url "https://github.com/leetsecure/qryptic-client-cli/releases/download/v0.1.1/qryptic_v0.1.1_Darwin_arm64.tar.gz"
+      sha256 "0d5b57a59caaec1849ffc66bfdcfd4314a82d96d6fbd84246ef1a04b14eb5899"
 
       def install
         bin.install "qryptic"
@@ -33,8 +33,8 @@ class Qryptic < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/leetsecure/qryptic-client-cli/releases/download/v0.1.0/qryptic_v0.1.0_Linux_x86_64.tar.gz"
-        sha256 "9f01ad3e809786b70e92ed61a45fe942f7b272d202308b8ef46c033b52434ecf"
+        url "https://github.com/leetsecure/qryptic-client-cli/releases/download/v0.1.1/qryptic_v0.1.1_Linux_x86_64.tar.gz"
+        sha256 "1fca918c0b9dd7929cda162d3d0c30edf7608be971ed8399a640bf62efbeb0f9"
 
         def install
           bin.install "qryptic"
@@ -43,8 +43,8 @@ class Qryptic < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/leetsecure/qryptic-client-cli/releases/download/v0.1.0/qryptic_v0.1.0_Linux_arm64.tar.gz"
-        sha256 "5d73584ba6472d42fc76e5f74f2e8f08cd8597f805e46af089e686cbd4d47aa7"
+        url "https://github.com/leetsecure/qryptic-client-cli/releases/download/v0.1.1/qryptic_v0.1.1_Linux_arm64.tar.gz"
+        sha256 "edec865ed9401dee90d95dedd7e662af70b8fdfc99c64f3c9a3c9f4c4955ea57"
 
         def install
           bin.install "qryptic"
